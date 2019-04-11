@@ -1,0 +1,17 @@
+<h1>Find an artist</h1>
+
+{{!-- Redirect the user to: "GET /artists?search=theValueTyped" --}}
+{{!-- Perfect for search --}}
+<form action="/artists" method="get" class="form-inline">
+  <input type="text" name="search" class="form-control" placeholder="Artist name">
+  <button type="submit" class="btn btn-danger">Search artist</button>
+</form>
+
+
+
+{{!-- Redirect the user to: "POST /artists" --}}
+{{!-- 
+<form action="/artists" method="post">
+  <input type="text" name="search">
+</form> 
+--}}

@@ -1,0 +1,19 @@
+<h1>Albums</h1>
+
+<div class="row">
+{{#each albums}}
+  <div class="col-md-4 col-6">
+    <div class="card my-2">
+      {{#if this.images.[0]}}
+        <img src="{{this.images.[0].url}}" class="card-img-top">
+      {{else}}
+        <img src="https://i.imgur.com/3MOFWYd.png" class="card-img-top">
+      {{/if}}
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <a href="/tracks/{{this.id}}" class="btn btn-primary">View Tracks</a>
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>
